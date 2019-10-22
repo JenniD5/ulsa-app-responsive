@@ -31,6 +31,26 @@ body{
     background-color: rgb(230, 90, 223);
     margin: 0;
 }
+
+.container{
+    width: 90%;
+    background-color: thistle;
+    height: 90%;
+    margin:0 auto;
+    /*0 aunto para centrar algo*/
+    position: absolute;
+
+}
+
+.selection{
+    float: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(167, 167, 57);
+    margin-left: 0px;
+}
+
   /*que se en un rango, esl and sirve para daler el rango, para que cuando llegue a ese rango, haga algo */
 @media only screen and (max-width:1000px)
 /*para que funcione solo en ese tiempo de pantallas*/
@@ -38,6 +58,11 @@ body{
     body{
         background-color: rgb(160, 62, 155);
     }
+    .pixels-text{
+        color:cornsilk;
+        font-size: 40px;
+        font-family: monospace;
+        }
 }
 
 @media only screen and (max-width:800px)
@@ -46,6 +71,12 @@ body{
     body{
         background-color:rgb(105, 42, 102);
     }
+    .pixels-text{
+        color:blue;
+        font-size: 80px;
+        font-family: fantasy;
+    }
+
 }
 
 
@@ -57,19 +88,37 @@ body{
     body{
         background-color:rgb(59, 24, 58);
     }
+
+    .pixels-text{
+        color: turquoise;
+        font-size: 120px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .selection{
+        float: none;
+    }
+.selection-hover{
+    background-color: yellowgreen;
+    color:black;
+}
+
+    .container{
+        width: 100px;
+    }
 }
 
 
 
-.pixels-text{
+
+/*.pixels-text{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 80px;
-    color: white;
+    color: black;
     text-align: center;
     top:50%;
     position: absolute;
     right: 0;
     left: 0;
     margin: 0;
-}
+}*/
 
