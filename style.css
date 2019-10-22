@@ -1,4 +1,4 @@
-.nav-bar{
+/*.nav-bar{
     background-color:aqua;
     width: 100%;
     margin: 0;
@@ -20,8 +20,57 @@ body{
 
 /*pegar lo de media only screen  y el color del body */
 
-@media only screen and (max-width: 600px) {
+/*@media only screen and (max-width: 600px) {
     body {
       background-color: lightblue;
     }
+}*/
+
+
+body{
+    background-color: rgb(230, 90, 223);
+    margin: 0;
+}
+  /*que se en un rango, esl and sirve para daler el rango, para que cuando llegue a ese rango, haga algo */
+@media only screen and (max-width:1000px)
+/*para que funcione solo en ese tiempo de pantallas*/
+{
+    body{
+        background-color: rgb(160, 62, 155);
+    }
+}
+
+@media only screen and (max-width:800px)
+/*para que funcione solo en ese tiempo de pantallas*/
+{
+    body{
+        background-color:rgb(105, 42, 102);
+    }
+}
+
+
+
+
+@media only screen and (max-width:600px)
+/*para que funcione solo en ese tiempo de pantallas*/
+{
+    body{
+        background-color:rgb(59, 24, 58);
+    }
+}
+
+
+
+.pixels-text{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 80px;
+    color: white;
+    text-align: center;
+    top:50%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin: 0;
+    
+
 }
