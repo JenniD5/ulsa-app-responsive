@@ -33,9 +33,10 @@ body{
 }
 
 .container{
+    min-height: 100px;/*pata auto-ajustarce, no es un tamaño estatico*/
     width: 90%;
     background-color: thistle;
-    height: 90%;
+    overflow:hidden; /*overflow es cuano sobre-pasa las dimesiones */
     margin:0 auto;
     /*0 aunto para centrar algo*/
     position: absolute;
@@ -50,6 +51,37 @@ body{
     background-color: rgb(167, 167, 57);
     margin-left: 0px;
 }
+
+.section1{  /*no se re-odena porque no tiene over-flow*/
+    width: 60%;
+    min-height: 300px;
+    overflow: hidden;
+    background-color:chocolate;
+    color: black;
+    float: left;
+    
+}
+.section2{
+    width: 20%;
+    min-height: 500px;
+    overflow: hidden;
+    background-color:chocolate;
+    color: black;
+    float: left;
+}
+.section-container{
+    width: 100%;/*relativo a donde se encuentra*/
+    height: 100px;
+
+}
+
+
+
+
+
+
+
+
 
   /*que se en un rango, esl and sirve para daler el rango, para que cuando llegue a ese rango, haga algo */
 @media only screen and (max-width:1000px)
@@ -97,14 +129,18 @@ body{
     .selection{
         float: none;
     }
-.selection-hover{
+    .selection-hover{
     background-color: yellowgreen;
-    color:black;
-}
+    color:black; 
+    }
 
     .container{
         width: 100px;
     }
+    .section1, .section2{
+        font-size: 20px;
+    }
+    
 }
 
 
