@@ -36,7 +36,7 @@ body{
     min-height: 100px;/*pata auto-ajustarce, no es un tamaño estatico*/
     width: 90%;
     background-color: thistle;
-    overflow:hidden; /*overflow es cuano sobre-pasa las dimesiones */
+    overflow:hidden; /*overflow es cuando sobre-pasa las dimesiones */
     margin:0 auto;
     /*0 aunto para centrar algo*/
     position: absolute;
@@ -69,9 +69,9 @@ body{
     color: black;
     float: left;
 }
-.section-container{
+.section-container, .options-container {
     width: 100%;/*relativo a donde se encuentra*/
-    height: 100px;
+    min-height: 100px;
 
 }
 
